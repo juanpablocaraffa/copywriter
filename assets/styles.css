@@ -234,29 +234,6 @@ z-index: 10;
 
 
 
-/* contacto */
-
-#contact{
-    margin-top: 200px;
-}
-
-#contact h3{
-    text-transform: uppercase;
-    letter-spacing: 15px;
-    font-size: 12px;
-    opacity: .8;
-    font-weight: 800;
-    margin-bottom: 20px;
-}
-
-#contact h6{
-    font-size: 12px;
-    margin-top: 5px;
-}
-
-#contact h6 span{
-    color: #04C2C7;
-}
 
 #right{
     width: 50%;
@@ -279,6 +256,69 @@ z-index: 10;
     top: 70%;
     width: 150px;
 } */
+
+
+
+
+/* ACERCA DE */
+.acercade{
+    margin: 200px 200px;
+}
+.acercade h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3em;
+    margin: 40px;
+}
+
+/* FOOTER */
+
+#contact{
+    margin-top: 200px;
+    height: 150px;
+}
+
+#contact h3{
+    margin-top: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    /* letter-spacing: 10px; */
+
+}
+
+#contact .social{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#contact .social a{
+    margin: 40px;
+    text-decoration: none;
+    color: #119da0;
+    font-size: 30px;
+}
+
+
+/* #contact h3{
+    text-transform: uppercase;
+    
+    font-size: 12px;
+    opacity: .8;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+#contact h6{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#contact h6 span{
+    color: #04C2C7;
+} */
+
 
 
 /* media queries */
@@ -336,15 +376,25 @@ z-index: 10;
           
 }
 
+.acercade{
+    margin: 20px;
+}
+.acercade h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.1em;
+    
+}
+
+#contact .social a{
+    font-size: 30px;
+}
 
 }
 
 
 @media (max-width:375px){
  
-
-
-
 .name.main{
     font-size: 1.5em;
 }
@@ -353,10 +403,5 @@ z-index: 10;
        
     font-size: 0.6em;
 }
-
-
-
-
-
 
 }
