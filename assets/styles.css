@@ -320,26 +320,13 @@ padding: 5px;
 
 footer{
     background-color: #117675;
-    height: 220px;
- 
+    height: 230px;
  
     
 }
 
-#contact{
-    margin-top: 200px;
-    height: 150px;
-}
 
-#contact h4{
-    color: white;
-    margin: 25px;
-    padding: 25px;
-    text-transform: uppercase;
-    text-align: center;
-    /* letter-spacing: 10px; */
 
-}
 
 #contact .social{
     display: flex;
@@ -357,15 +344,56 @@ footer{
 
 
 
+/* CREATIVE SEC */
+
+.creativesec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.creativesec h2{
+    position: relative;
+    font-size: 2vh;
+    color: white;
+     text-transform: uppercase;
+}
+
+.creativesec h2:before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #04c0c78d;
+    border-right: 2px solid #04C2C7;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+
+}
+
+@keyframes animate
+
+{
+    0%,10%,100% {
+        width: 0;
+    }
+    70%,90% {
+        width: 100%;
+    }
+    
+}
+
 
 
 /* media queries */
 
 @media (max-width:900px){
 
-    
  
-    #bg nav{
+#bg nav{
     flex-direction: column;
     margin-top: 15px;
  }
