@@ -1,4 +1,4 @@
-/* var tl = gsap.timeline();
+var tl = gsap.timeline();
 
 tl.from('.navitem', {
     stagger: .3,
@@ -26,7 +26,7 @@ tl.from('.navitem', {
     ease: 'Expo.easeInOut',
     opacity: 0
 }, '-=2')
- */
+
 
 /* función scroll */
 
