@@ -26,7 +26,7 @@ body{
     width: 100%;
     height: 100%;
     background-color: #fff;
-    animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 7s both;
+    animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 3s both;
 }
 
 .name{
@@ -60,16 +60,16 @@ body{
 }
  */
 #wrapperload .elem:nth-child(1){
-    animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
+    animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
 }
 
 #wrapperload .elem:nth-child(2){
-    animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 3s both;
+    animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 2s both;
 }
 
-#wrapperload .elem:nth-child(3){
+/* #wrapperload .elem:nth-child(3){
     animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 5s both;
-}
+} */
 
 @keyframes anim{
     to{
@@ -167,16 +167,18 @@ nav #links i{
     margin-top: 30px;
 } */
 
-#left>h5{
-    font-size: 1em;
+#left div h5{
+    font-size: 0.8em;
+    text-align: center;
     text-transform: uppercase;
-    letter-spacing: 12px;
-    margin-top: 20px;
+    letter-spacing: 10px;
+    margin: 20px;
     font-weight: 700;
     color: #042828;
+    
 }
 
-#left>h5 span{
+#left div h5 span{
     color:#9e9d9d ;
 }
 
@@ -320,12 +322,10 @@ padding: 5px;
 
 footer{
     background-color: #117675;
-    height: 230px;
+    min-height: 200px;
  
     
 }
-
-
 
 
 #contact .social{
@@ -372,6 +372,46 @@ footer{
     overflow: hidden;
     animation: animate 6s linear infinite;
 
+}
+
+.logo-footer-cont{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-footer{
+    width: 4em;
+    border-radius: 200px;
+    margin-bottom: 20px;
+    
+}
+
+.arrow-cont{
+    display: flex;
+    justify-content: end;
+}
+
+.arrow-cont a{
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.arrow-cont a i{
+    font-size: 25px;
+}
+
+.reconocimiento-cont span{
+    color: rgb(126, 166, 166);
+    padding: 20px;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+}
+
+.reconocimiento-cont a{
+    text-decoration: none;
+    color: rgb(199, 199, 199);
 }
 
 @keyframes animate
@@ -427,11 +467,20 @@ footer{
     font-size: 2em;
 }
 
-#left h5{
-    font-size: 0.7em;
-    margin-left: 15px;
-    
+#left div .h5-span{
+    position: absolute;
+    bottom: 100px;
+    width: 75vw;
+  
+
+  
+      
 }
+
+/* #left div h5{
+    
+    
+} */
 
 #right{
     margin-top: -80px;
@@ -470,7 +519,7 @@ footer{
     font-size: 1.5em;
 }
 
-#left h5{
+#left div h5{
        
     font-size: 0.6em;
 }
