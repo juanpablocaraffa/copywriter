@@ -70,7 +70,7 @@
                         <div id="smline"></div>
                         <h4 class="leftitem">Hola, soy </h4><h3 class="name main">Agustina Sarla.</h3><br>
                         <div class="h5-span">
-                            <h5 class="leftitem">Copywriter  <span id="lblue">de Argentina</span>
+                            <h5 class="leftitem">Copywriter <span id="lblue">de Argentina</span>
                         </h5>
                     </div>
                     
@@ -95,9 +95,44 @@
 
 
 
+    <section class="reveal-sec">   
+      <div>
+        <h2 class="reveal">TÍTULO 1</h2>
+        <h2 class="reveal">Subtítulo 1</h2>
+        <img src="assets/img/Logo -01.jpg" alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis quae quas dolorem nobis vero quaerat harum dolor iusto assumenda autem..</p>
+      </div>  
+    </section>
+    
+    <section class="reveal-sec">   
+        <div>
+          <h2 class="reveal">TÍTULO 2</h2>
+          <h2 class="reveal">Subtítulo 2</h2>
+          <img src="assets/img/Logo -01.jpg" alt="">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis quae quas dolorem nobis vero quaerat harum dolor iusto assumenda autem. </p>
+        </div>  
+    </section>
+     
+    <section class="reveal-sec">   
+        <div>
+          <h2 class="reveal">TÍTULO 3</h2>
+          <h2 class="reveal">Subtítulo 3</h2>
+          <img src="assets/img/Logo -01.jpg" alt="">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis quae quas dolorem nobis vero quaerat harum dolor iusto assumenda autem. </p>
+        </div>  
+    </section>
+     
+    <section class="reveal-sec">   
+        <div>
+          <h2 class="reveal">TÍTULO 4</h2>
+          <h2 class="reveal">Subtítulo 4</h2>
+          <img src="assets/img/Logo -01.jpg" alt="">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis quae quas dolorem nobis vero quaerat harum dolor iusto assumenda autem.</p>
+        </div>  
+    </section>
 
 
-    <section id="acercade" class="acercade">
+    <!-- <section id="acercade" class="acercade">
        
             <h2>acerca de mí</h2>
             <div class="line"></div>
@@ -120,7 +155,7 @@
 
 
 
-    </section>
+    </section> -->
 
     
     <footer>
@@ -164,7 +199,35 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
     <script src="assets/main.js"></script>
 
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
+
+   <script type="text/javascript">
+   
+        const reveal = gsap.utils.toArray('.reveal');
+            reveal.forEach((text, i) => {
+            ScrollTrigger.create({
+            trigger: text,
+            toggleClass: 'active',
+            start: 'top 90%',
+            end:'top 0%',
+           // markers: true
+            })
+        })
+   
+        const images = gsap.utils.toArray('img');
+            images.forEach((img, i) => {
+            ScrollTrigger.create({
+            trigger: img,
+            toggleClass: 'active',
+            start: 'top 90%',
+            end:'top 0%',
+            //markers: true
+            })
+        })
+
+   </script>
 
 
     
